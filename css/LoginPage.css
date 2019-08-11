@@ -11,6 +11,8 @@ body{
     text-transform: uppercase;
     background-color: rgb(233, 236, 240);
     box-shadow: 0 1rem 2rem rgba(14, 161, 246, 0.651);
+    /* font-family: 'Merriweather', serif; */
+
 }
 .main__card{
     animation: card__animation  1.9s;
@@ -140,32 +142,19 @@ label{
  /* Extra small devices (portrait phones, less than 576px) */
 @media  (max-width: 575px) { 
     
-    .margin__left--medium{
-        margin-left: 9rem !important;
+    body{
+    background: rgb(233, 236, 240);
+
     }
-    .user-input,
-    .pass-input{
-        margin-left: 8rem;
-        padding: 1.5rem 1.5rem;
-        width: 60% !important;
+    .main__card{
+    box-shadow: none !important;
+        
     }
     .card-img{
         width: 100% !important;
     }
      .margin__left--large{
-        margin-left: 7.5rem !important;
-    }
-    
- }
-
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 576px) and  (max-width: 767.98px) { 
-    .card-img{
-        width: 100% !important;
-    }
-     .margin__left--large{
-        margin-left: 1rem !important;
+        margin-left: 0rem !important;
     }
     .margin__left--medium{
         margin-left: 3rem !important;
@@ -185,39 +174,106 @@ label{
  }
 
 
-/* Medium devices (tablets, less than 992px) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and  (max-width: 767.98px) { 
+    
+
     .main__card{
-        max-width: 930px !important;
+        width: 550px;
+        box-shadow: none !important;
+        
     }
     .card-img{
-        width: 130%;
+        width: 100% !important;
+    }
+     .margin__left--large{
+        margin-left: 6.5rem !important;
     }
     .margin__left--medium{
-        margin-left: 9rem !important;
+        margin-left: 4rem !important;
+    }
+    .left__line,
+    .right__line{
+        width: 8rem;
+        background:rgba(0, 0, 0, 0.822);
+        margin-top: .7rem;
     }
     .user-input,
     .pass-input{
-        margin-left: 8rem;
+        margin-left: 3rem;
+        padding: 1.5rem 1.5rem;
+        width: 80% !important;
+    }
+ }
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .main__card{
+       width: 750px !important;
+    }
+    .card-img{
+        width: 140%;
+    }
+    .text-center{
+        margin-left: 7rem;
+    }
+    .line{
+        width: 11rem;
+        height: 3px;
+        background:rgba(0, 0, 0, 0.822);
+        margin-bottom: 3rem;
+        margin-left: 6rem;
+    }
+    .margin__left--medium{
+        margin-left: 10rem !important;
+    }
+    .left__line,
+    .right__line{
+        width: 7rem;
+        background:rgba(0, 0, 0, 0.822);
+        margin-top: .7rem;
+    }
+    .user-input,
+    .pass-input{
+        margin-left: 9rem;
         padding: 1.5rem 1.5rem;
         width: 60% !important;
     }
     .margin__left--large{
-        margin-left: 6rem;
+        margin-left: 10rem !important;
     }
  }
 
 
 /* Large devices (desktops, less than 1200px) */
-@media (min-width: 992px) and (max-width: 1199.98px) { 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .card-img
+    {
+        width: 100.5%;
+    } 
      .margin__left--large{
         margin-left: 10.5rem !important;
     }
+     .margin__left--medium{
+        margin-left: 8rem !important;
+    }
+    .user-input,
+    .pass-input{
+        margin-left: 7rem;
+        padding: 1.5rem 1.5rem;
+        width: 65% !important;
+    }
  }
 @media (max-width: 1200px) { 
+
      .margin__left--large{
         margin-left: 12rem;
     }
+    .main__card{
+        animation: none;
+    }
+
  }
 
 
